@@ -33,9 +33,9 @@ def read_messages(thread: int) -> None:
     for stream in consumer:
         message = json.loads(stream.value)
         ip_address = message["device_ip"]
-        #print(".", end="", flush=True)
+        print(".", end="", flush=True)
         # Uncomment the next line to see which thread reads the message
-        print(thread, ip_address)
+        # print(thread, ip_address)
         ip_addresses.append({"ip_address": ip_address})
 
 
