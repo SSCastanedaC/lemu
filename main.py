@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from pymongo import MongoClient
 from time_formatter import format_datetime
 from settings import MONGO_URL, MONGO_DB, MONGO_COLLECTION
-from typing import Tuple, Dict
+from typing import Dict
 
 app = FastAPI()
 client = MongoClient(MONGO_URL)
